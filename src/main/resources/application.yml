@@ -16,5 +16,14 @@ spring:
         dialect: org.hibernate.dialect.MySQL57Dialect
     defer-datasource-initialization: true
 
-  logging.level:
+jwt:
+  header: Authorization
+  # secret key를 base 64로 인코딩하여 채워넣음
+  secret: c2lsdmVybmluZS10ZWNoLXNwcmluZy1ib290LWp3dC10dXRvcmlhbC1zZWNyZXQtc2lsdmVybmluZS10ZWNoLXNwcmluZy1ib290LWp3dC10dXRvcmlhbC1zZWNyZXQK
+  token-validity-in-seconds: 86400
+
+logging:
+  level:
     org.hibernate.SQL: debug
+  # org.hibernate.type: trace
+
