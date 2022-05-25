@@ -27,8 +27,13 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+	implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6")
+
 	//mysql
 	runtimeOnly 'mysql:mysql-connector-java'
+
+	//h2
+	runtimeOnly 'com.h2database:h2'
 
 	//spring security
 	implementation 'org.springframework.boot:spring-boot-starter-security'
