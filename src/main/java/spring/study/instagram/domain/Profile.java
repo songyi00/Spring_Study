@@ -1,9 +1,6 @@
 package spring.study.instagram.domain;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,6 +8,7 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
+@Getter
 public class Profile {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
